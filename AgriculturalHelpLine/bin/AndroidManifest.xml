@@ -1,0 +1,259 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.agriculturalhelpline"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+<!--................agriculture.................-->
+         <activity
+            android:name="kucse.agriculture"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <!--................paddy.................-->
+         <activity
+            android:name="kucse.paddy"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PADDY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <!--................fishing.................-->
+         <activity
+            android:name="kucse.fishing"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FISHING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--................farm.................-->
+         <activity
+            android:name="kucse.farm"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FARM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <!--................QuailBird.................-->
+         <activity
+            android:name="kucse.fquailbird"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FQUAILBIRD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+   <!--................Cow.................-->
+         <activity
+            android:name="kucse.fcow"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FCOW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>    
+            
+         </activity>  
+     
+         <!--................Goat.................-->
+         <activity
+            android:name="kucse.fgoat"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FGOAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+            <!--................Goat.................-->
+         <activity
+            android:name="kucse.fhen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FHEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+         
+         
+         
+            <!--................pigeons.................-->
+         <activity
+            android:name="kucse.fpigeons"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PIGEONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         
+         
+         
+         
+         
+           <!--................PTypes.................-->
+         <activity
+            android:name="kucse.ptypes"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PTYPES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+   <!--................PCultivate.................-->
+         <activity
+            android:name="kucse.pcultivation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PCULTIVATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>    
+            
+         </activity>  
+     
+         <!--................PFartilizer.................-->
+         <activity
+            android:name="kucse.pfartilizer"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PFARTILIZER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+            <!--................PInsectes.................-->
+         <activity
+            android:name="kucse.pinsects"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PINSECTES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+         
+         
+         
+            <!--................PSoil.................-->
+         <activity
+            android:name="kucse.psoil"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PSOIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+         
+         
+         
+         
+         
+         
+         
+         
+          
+           <!--................FTypes.................-->
+         <activity
+            android:name="kucse.ftypes"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FTYPES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+   <!--................FCultivate.................-->
+         <activity
+            android:name="kucse.fculture"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FCULTURE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>    
+            
+         </activity>  
+     
+         <!--................FFOOD.................-->
+         <activity
+            android:name="kucse.ffood"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FFOOD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+            <!--................FDISEASE.................-->
+         <activity
+            android:name="kucse.fdisease"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FDISEASE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+         
+         
+         
+            <!--................FWater.................-->
+         <activity
+            android:name="kucse.fwater"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FWATER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
