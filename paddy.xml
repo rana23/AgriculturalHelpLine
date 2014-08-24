@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:padding="5dp"
+     android:background="#21AAC0">
+
+     <Button
+         android:id="@+id/insects"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/fartilizer"
+         android:layout_below="@+id/fartilizer"
+         android:layout_marginTop="35dp"
+         android:text="Insectes" />
+
+     <Button
+         android:id="@+id/soil"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_alignLeft="@+id/insects"
+         android:layout_below="@+id/insects"
+         android:layout_marginTop="35dp"
+         android:text="Soil" />
+
+     <Button
+         android:id="@+id/fartilizer"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_marginTop="35dp"
+         android:layout_alignLeft="@+id/cultivate"
+         android:layout_centerVertical="true"
+         android:text="Fartilizer" />
+
+     <Button
+         android:id="@+id/cultivate"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_above="@+id/fartilizer"
+         android:layout_alignLeft="@+id/types"
+        android:layout_marginTop="35dp"
+         android:text="How to Cultivate" />
+
+     <Button
+         android:id="@+id/types"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_above="@+id/cultivate"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="35dp"
+         android:text="Types" />
+
+</RelativeLayout>
