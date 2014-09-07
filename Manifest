@@ -1,0 +1,248 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.agriculturalhelpline"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+ <!-- Map Permissions -->
+ 
+   <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+     
+    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+       
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+   <meta-data
+              android:name="com.google.android.maps.v2.API_KEY"
+              android:value="AIzaSyAKnYc0ysBa_w3IGZFZCye6SM7xmqgT3LQ"/>
+        
+        <meta-data 
+              android:name="com.google.android.gms.version" 
+              android:value="@integer/google_play_services_version" />
+     
+        
+        <activity
+            android:name="com.example.agriculturalhelpline.AgricultureMapView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.AgricultureMapView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+            
+<!--................agriculture.................-->
+         <activity
+            android:name="com.example.agriculturalhelpline.agriculture"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+          <activity
+            android:name="com.example.agriculturalhelpline.controller.paddy"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PADDY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       
+                    <activity
+            android:name="com.example.agriculturalhelpline.controller.fishing"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FISHING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          
+                   <activity
+            android:name="com.example.agriculturalhelpline.controller.farm"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FARM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>     
+                    
+            <activity
+            android:name="com.example.agriculturalhelpline.model.fcow"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FCOW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>         
+                   
+               <activity
+            android:name="com.example.agriculturalhelpline.model.fculture"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FCULTURE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>       
+          
+            <activity
+            android:name="com.example.agriculturalhelpline.model.fdisease"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FDISEASE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>    
+            
+             <activity
+            android:name="com.example.agriculturalhelpline.model.ffood"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FFOOD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>   
+            
+                    <activity
+            android:name="com.example.agriculturalhelpline.model.fgoat"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FGOAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+            
+            
+                <activity
+            android:name="com.example.agriculturalhelpline.model.fhen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FHEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+            
+                
+                    <activity
+            android:name="com.example.agriculturalhelpline.model.fpigeons"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PIGEONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>        
+            
+            
+           <activity
+            android:name="com.example.agriculturalhelpline.model.fquailbird"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FQUAILBIRD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>     
+               
+               <activity
+            android:name="com.example.agriculturalhelpline.model.ftypes"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FTYPES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>        
+       
+               
+                 <activity
+            android:name="com.example.agriculturalhelpline.model.fwater"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.FWATER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>  
+           
+           <activity
+            android:name="com.example.agriculturalhelpline.model.pcultivation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PCULTIVATE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                 
+           <activity
+            android:name="com.example.agriculturalhelpline.model.pfartilizer"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PFARTILIZER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>                        
+                              
+             <activity
+            android:name="com.example.agriculturalhelpline.model.pinsects"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PINSECTES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>                             
+    
+             
+          <activity
+            android:name="com.example.agriculturalhelpline.model.psoil"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PSOIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>   
+             
+            <activity
+            android:name="com.example.agriculturalhelpline.model.ptypes"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.PTYPES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>             
+             
+             
+             
+             
+    </application>
+
+</manifest>
